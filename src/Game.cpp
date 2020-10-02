@@ -1,7 +1,7 @@
 #include "Game.h"
 
 Game::Game()
-: m_window (sf::VideoMode(640.f, 480.f), "Play Go !", sf::Style::Close)
+: m_window (sf::VideoMode(800.f, 600.f), "Play Go !", sf::Style::Close)
 { }
 
 void Game::run()
