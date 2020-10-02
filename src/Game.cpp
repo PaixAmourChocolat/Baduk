@@ -6,10 +6,22 @@ Game::Game()
 
 void Game::run()
 {
+	sf::Time elapsed = sf::Time::Zero;
+	sf::Clock clock;
+	
 	while(m_window.isOpen())
 	{
 		processEvents();
-		update();
+		
+		elapsed += clock.restart();
+		while(elapsed >= GameTick)
+		{
+			elapsed -= GameTick;
+			
+			processEvents();
+			update(GameTick);
+		}
+		
 		render();
 	}
 }
@@ -27,7 +39,7 @@ void Game::processEvents()
 	}
 }
 
-void Game::update()
+void Game::update(sf::Time dt)
 {
 	
 }

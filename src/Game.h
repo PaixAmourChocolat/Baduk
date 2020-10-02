@@ -14,12 +14,14 @@ public:
 private:
 	
 	void processEvents();
-	void update();
+	void update(sf::Time);
 	void render();
 	
 private:
 	
 	sf::RenderWindow m_window;
+	
+	const sf::Time GameTick = sf::seconds(1.f / 60.f);
 };
 
 #endif
