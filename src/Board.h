@@ -30,6 +30,6 @@ private:
 	
 	std::vector<std::vector<Stone>> m_goban;
 	std::vector<Group> m_groups;
-}
+};
 
 #endif

@@ -47,5 +47,8 @@ void Game::update(sf::Time dt)
 void Game::render()
 {
 	m_window.clear();
+	
+	m_window.draw(m_board);
+	
 	m_window.display();
 }

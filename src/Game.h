@@ -2,6 +2,7 @@
 #define GAME_H_INCLUDED
 
 #include <SFML/Graphics.hpp>
+#include "Board.h"
 
 class Game
 {
@@ -22,6 +23,8 @@ private:
 	sf::RenderWindow m_window;
 	
 	const sf::Time GameTick = sf::seconds(1.f / 60.f);
+	
+	Board m_board;
 };
 
 #endif
