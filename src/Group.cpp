@@ -12,7 +12,7 @@ void Group::add(sf::Vector2u coords)
 
 void Group::clean()
 {
-	m_container.reset();
+	m_container.clear();
 }
 
 bool Group::contains(sf::Vector2u coords) const

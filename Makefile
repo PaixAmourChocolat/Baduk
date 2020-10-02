@@ -12,10 +12,10 @@ all: $(O) $(B) $(O)/Main.o
 $(O)/Main.o: $(O)/Game.o 
 	$(CC) $(S)/Main.cpp -c -o $(O)/Main.o $(FLAGS)
 
-$(O)/Game.o:
+$(O)/Game.o: #$(O)/Goban.o
 	$(CC) $(S)/Game.cpp -c -o $(O)/Game.o $(FLAGS)
 
-$(O)/Goban.o:
+$(O)/Goban.o: $(O)/Group.o
 	$(CC) $(S)/Goban.cpp -c -o $(O)/Goban.o $(FLAGS)
 	
 $(O)/Group.o:

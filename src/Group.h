@@ -1,7 +1,8 @@
 #ifndef GROUP_H_INCLUDED
 #define GROUP_H_INCLUDED
 
-#include <SFML/System/Vector.hpp>
+#include <SFML/System/Vector2.hpp>
+#include <vector>
 
 enum Stone
 {
