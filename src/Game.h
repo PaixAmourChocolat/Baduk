@@ -21,7 +21,7 @@ private:
 	
 	sf::RenderWindow m_window;
 	
-	const sf::Time GameTick = sf::seconds(1.f / 60.f);
+	constexpr sf::Time GameTick = sf::seconds(1.f / 60.f);
 };
 
 #endif

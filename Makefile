@@ -15,6 +15,9 @@ $(O)/Main.o: $(O)/Game.o
 $(O)/Game.o:
 	$(CC) $(S)/Game.cpp -c -o $(O)/Game.o $(FLAGS)
 
+$(O)/Group.o:
+	$(CC) $(S)/Group.cpp -c -o $(O)/Group.o $(FLAGS)
+
 clean: $(O) $(B)
 	rm -r $(O)
 	rm -r $(B)
